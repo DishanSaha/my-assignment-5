@@ -48,7 +48,7 @@
     </section>
 
     <!-- section-3----------- -->
-    <div class="lg:min-h-screen h-full lg:flex grid gap-5 lg:px-6  lg:py-6">
+    <div class="lg:min-h-screen h-full lg:flex lg:flex-row flex flex-col-reverse gap-5 lg:px-6  lg:py-6">
         <div class="grid lg:grid-cols-3 justify-center lg:w-[1250px] gap-5">
             <div class="lg:w-[350px] h-[360px] bg-white rounded-xl p-7 shadow-md">
                 <div class="flex justify-between items-center mb-4">
@@ -60,11 +60,11 @@
                     <p class="text-[#5C5C5C]">National Emergency</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">999</p>
+                    <p id="number" class="text-black font-bold text-[26px]">999</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">সার্বজনীন</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-1"
+                    <button onclick="copyText('number')" id="copy-btn-1"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -86,11 +86,11 @@
                     <p class="text-[#5C5C5C]">Police</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">999</p>
+                    <p id="number-1" class="text-black font-bold text-[26px]">999</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">পুলিশ</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-2"
+                    <button onclick="copyText('number-1')" id="copy-btn-2"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -112,11 +112,11 @@
                     <p class="text-[#5C5C5C]">Fire Service</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">999</p>
+                    <p id="number-2" class="text-black font-bold text-[26px]">999</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">ফায়ার</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-3"
+                    <button onclick="copyText('number-2')" id="copy-btn-3"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -138,11 +138,11 @@
                     <p class="text-[#5C5C5C]">Ambulance</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">1994-999999</p>
+                    <p id="number-3" class="text-black font-bold text-[26px]">1994-999999</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">স্বাস্থ্য</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-4"
+                    <button onclick="copyText('number-3')" id="copy-btn-4"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -164,11 +164,11 @@
                     <p class="text-[#5C5C5C]">Women & Child Helpline</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">109</p>
+                    <p id="number-4" class="text-black font-bold text-[26px]">109</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">সহায়তা</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-5"
+                    <button onclick="copyText('number-4')" id="copy-btn-5"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -190,11 +190,11 @@
                     <p class="text-[#5C5C5C]">Anti-Corruption</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">106</p>
+                    <p id="number-5" class="text-black font-bold text-[26px]">106</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">সরকারি</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-6"
+                    <button onclick="copyText('number-5')" id="copy-btn-6"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -216,11 +216,11 @@
                     <p class="text-[#5C5C5C]">Electricity Outage</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">16216</p>
+                    <p id="number-6" class="text-black font-bold text-[26px]">16216</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">বিদ্যুৎ</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-7"
+                    <button onclick="copyText('number-6')" id="copy-btn-7"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -242,11 +242,11 @@
                     <p class="text-[#5C5C5C]">Brac</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">16445</p>
+                    <p id="number-7" class="text-black font-bold text-[26px]">16445</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">এনজিও</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-8"
+                    <button onclick="copyText('number-7')" id="copy-btn-8"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -268,11 +268,11 @@
                     <p class="text-[#5C5C5C]">Bangladesh Railway</p>
                 </div>
                 <div class="mt-3 ">
-                    <p class="text-black font-bold text-[26px]">163</p>
+                    <p id="number-8" class="text-black font-bold text-[26px]">163</p>
                     <span class="text-[#5C5C5C] text-[13px] bg-[#F2F2F2] p-2 rounded-2xl">পরিবহন</span>
                 </div>
                 <div class="flex items-center gap-3 mt-8">
-                    <button id="copy-btn-9"
+                    <button onclick="copyText('number-8')" id="copy-btn-9"
                         class="btn btn-neutral btn-outline w-[50%] h-[40px] rounded-[8px] border-2 border-[#5C5C5C]/50">
                         <i class="fa-regular fa-copy"></i>
                         Copy
@@ -285,7 +285,7 @@
                 </div>
             </div>
         </div>
-        <div class=" px-7 pt-5 lg:w-[400px] lg:h-[1120px]  rounded-[12px]  bg-white shadow-md">
+        <div class=" px-7 py-5 lg:w-[400px] lg:h-[1120px]  rounded-[12px]  bg-white shadow-md">
             <div class="flex justify-between items-center">
                 <div class="flex justify-center gap-2">
                     <i class="fa-regular fa-clock relative top-2"></i>
