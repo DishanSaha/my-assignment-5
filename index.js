@@ -61,6 +61,8 @@ const dataList = [
         alert: '📞Calling Bangladesh Railway Service 163'
     }
 ]
+
+
 const callHistory = [];
 
 for (let i = 0; i < dataList.length; i++) {
